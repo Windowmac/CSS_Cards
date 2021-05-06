@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cards</title>
+    <link rel="resetsheet" href="reset.css">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<header>
+        <h1>CSS Tip Cards</h1>
+        <p>Tips and picked-up formatting tricks to help with CSS styling</p>
+</header>
+<body>
+    <main>
+        <section class='card'>
+            <h2>FlexBox Row</h2>
+            <p>Use these properties to create a flexbox row layout</p>
+            <div class='cardBody'>
+                <p>.row {</p>
+                <p>flex-direction: row;</p>
+                <p>flex-wrap: wrap;</p>
+                <p>}</p>
+            </div>
+        </section>
+
+        <section class='card'>
+            <h2>FlexBox Column</h2>
+            <p>Use these properties to create a flexbox column layout</p>
+            <div class='cardBody'>
+                <p>.column {</p>
+                <p>display:flex;</p>
+                <p>flex-direction:column;</p>
+                <p>}</p>
+            </div>
+        </section>
+        
+        <section class='card'>
+            <h2>CSS Gridstyle</h2>
+            <p>Use these properties to create a CSS Grid layout</p>
+            <div class='cardBody'>
+                <p>.grid {</p>
+                <p>display:grid;</p>
+                <p>width:100%</p>
+                <p>grid-template-columns:</p>
+                <p>repeat(12, 1fr);</p>
+                <p>}</p>
+            </div>
+        </section>
+
+        <section class='card'>
+            <h2>Liner Gradient</h2>
+            <p>Create a linear gradient using CSS</p>
+            <div class='cardBody'>
+                <p>.linear-gradient-background {</p>
+                <p>background-image: linear-gradient-background (</p>
+                <p>rgba(232, 102, 236, 0.3) 0%</p>
+                <p>rgba(232, 102, 236, 0.6) 100%</p>
+                <p>);</p>
+                <p>}</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
