@@ -1,8 +1,12 @@
+* {
+    box-sizing: border-box;
+  }
+
 header {
-    text-align:center;
-    background-color: rgb(17, 16, 16);
+    text-align: center;
     color: rgb(12, 216, 29);
     margin: auto;
+    margin-bottom: 5%;
 }
 
 header p{
@@ -10,37 +14,86 @@ header p{
 }
 
 body {
-    background-color: rgb(17, 16, 16);
+    background: linear-gradient(#0c2f18, #021a02);
     color: rgb(12, 216, 29);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 2%;
+    justify-content: center;
+    /*margin: 2%;*/
+    align-items: flex-start;
+    flex-direction: row;
+    align-content: flex-start;
 }
 
 .card {
-    flex: auto;
+    flex: 1 0 200px;
     position: relative;
+    display: flex;
+    min-width: 30vw;
+    flex-direction: column;
+    align-items: center;
     border: rgb(32, 230, 32) 2px solid;
     border-radius: 30px;
-    max-width: 30%;
-    margin: 5px;
+    background-color: rgb(17, 16, 16);
+    margin: 15px;
+    margin-bottom: 40px;
+}
+
+.card p {
+    margin-top: 34px;
+    margin-left: 10px;
 }
 
 .cardHeader {
     position: absolute;
     top: -38px;
-    right: 158px;
     border: rgb(32, 230, 32) 2px solid;
+    background-color: rgb(17, 16, 16);
     padding: 4px;
+    border-radius: 30px;
 }
 
 .cardBody {
-    background: linear-gradient(180deg, rgb(173, 241, 63), darkgreen),
-                linear-gradient(45deg, darkgreen, chartreuse);
-    color: rgb(17, 16, 16);
+    background: linear-gradient(218deg, rgb(173, 241, 63), darkgreen),
+                linear-gradient(273deg, darkgreen, chartreuse),
+                linear-gradient(266deg, darkgreen, green);               
+    color: rgb(241, 228, 228);
+    border-radius: 30px;
+    padding: 3px;
+    margin: 4px;
+    margin-top: 2px;
+    align-self: stretch;
+    user-select: all;
+}
 
+.card:hover {
+    border: rgb(124, 248, 124) 3px solid;
+    color: rgb(124, 248, 124);
+    background-color: rgb(27, 39, 19);
+}
+
+.card:hover header {
+    border: rgb(124, 248, 124) 3px solid;
+    color: rgb(124, 248, 124);
+    background-color: rgb(27, 39, 19);
+}
+
+@media screen and (max-width:992px){
+    .card{
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    
+    .card {
+        width: 100vw;
+    }
 }
