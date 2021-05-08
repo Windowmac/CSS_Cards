@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Cards</title>
     <link rel="resetsheet" href="reset.css">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <header>
         <h1>CSS Tip Cards</h1>
@@ -15,18 +15,20 @@
 <body>
     <main>
         <section class='card'>
-            <h2>FlexBox Row</h2>
+            <header class='cardHeader'><h3>FlexBox Row</h3></header>
             <p>Use these properties to create a flexbox row layout</p>
             <div class='cardBody'>
-                <p>.row {</p>
-                <p>flex-direction: row;</p>
-                <p>flex-wrap: wrap;</p>
-                <p>}</p>
+                <pre> .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        }
+                </pre>
             </div>
         </section>
 
         <section class='card'>
-            <h2>FlexBox Column</h2>
+            <header class='cardHeader'><h3>FlexBox Row</h3></header>
             <p>Use these properties to create a flexbox column layout</p>
             <div class='cardBody'>
                 <p>.column {</p>
@@ -37,7 +39,7 @@
         </section>
         
         <section class='card'>
-            <h2>CSS Gridstyle</h2>
+            <header class='cardHeader'><h3>FlexBox Row</h3></header>
             <p>Use these properties to create a CSS Grid layout</p>
             <div class='cardBody'>
                 <p>.grid {</p>
@@ -50,7 +52,7 @@
         </section>
 
         <section class='card'>
-            <h2>Liner Gradient</h2>
+            <header class='cardHeader'><h3>FlexBox Row</h3></header>
             <p>Create a linear gradient using CSS</p>
             <div class='cardBody'>
                 <p>.linear-gradient-background {</p>
@@ -58,6 +60,16 @@
                 <p>rgba(232, 102, 236, 0.3) 0%</p>
                 <p>rgba(232, 102, 236, 0.6) 100%</p>
                 <p>);</p>
+                <p>}</p>
+            </div>
+        </section>
+
+        <section class='card'>
+            <header class='cardHeader'><h3>FlexBox Row</h3></header>
+            <p>Shorthand to set flex-direction and flex-wrap properties</p>
+            <div class='cardBody'>
+                <p>.container {</p>
+                <p>flex-flow: column wrap;</p>
                 <p>}</p>
             </div>
         </section>

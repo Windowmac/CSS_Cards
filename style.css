@@ -1,0 +1,46 @@
+header {
+    text-align:center;
+    background-color: rgb(17, 16, 16);
+    color: rgb(12, 216, 29);
+    margin: auto;
+}
+
+header p{
+    color:white;
+}
+
+body {
+    background-color: rgb(17, 16, 16);
+    color: rgb(12, 216, 29);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2%;
+}
+
+.card {
+    flex: auto;
+    position: relative;
+    border: rgb(32, 230, 32) 2px solid;
+    border-radius: 30px;
+    max-width: 30%;
+    margin: 5px;
+}
+
+.cardHeader {
+    position: absolute;
+    top: -38px;
+    right: 158px;
+    border: rgb(32, 230, 32) 2px solid;
+    padding: 4px;
+}
+
+.cardBody {
+    background: linear-gradient(180deg, rgb(173, 241, 63), darkgreen),
+                linear-gradient(45deg, darkgreen, chartreuse);
+    color: rgb(17, 16, 16);
+
+}
