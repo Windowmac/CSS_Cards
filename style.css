@@ -3,6 +3,7 @@
   }
 
 header {
+    flex: auto;
     text-align: center;
     color: rgb(12, 216, 29);
     margin: auto;
@@ -17,23 +18,26 @@ body {
     background: linear-gradient(#0c2f18, #021a02);
     color: rgb(12, 216, 29);
     font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 main {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    /*margin: 2%;*/
+    margin: 10px;
     align-items: flex-start;
-    flex-direction: row;
-    align-content: flex-start;
+    
 }
 
 .card {
-    flex: 1 0 200px;
+    flex: 1 0 auto;
     position: relative;
     display: flex;
     min-width: 30vw;
+    max-width: 30vw;
     flex-direction: column;
     align-items: center;
     border: rgb(32, 230, 32) 2px solid;
@@ -83,17 +87,24 @@ main {
 }
 
 @media screen and (max-width:992px){
+    header {
+        text-align: left;
+    }
+    
     .card{
-        width: 40vw;
+        min-width: 30vw;
+        max-width: 30vw;
     }
 }
 
 @media screen and (max-width: 768px) {
-    main {
-        flex-direction: column;
+    header {
+        text-align: left;
     }
     
+    
     .card {
-        width: 100vw;
+        min-width: 80vw;
+        max-width: 90vw;
     }
 }
